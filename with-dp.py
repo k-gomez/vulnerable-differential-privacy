@@ -24,6 +24,9 @@ detectedVuln = [
 
 def dpAlgo(data):
     dpData = []
+
+    # this is the differential privacy algorithm
+    # there are better once using Laplace distribution
     for each in data:
       flip = random.randint(0,1)
       if flip == 0:
